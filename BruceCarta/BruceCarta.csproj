@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\Images\Themes\**" />
+    <Content Remove="wwwroot\Images\Themes\**" />
+    <EmbeddedResource Remove="wwwroot\Images\Themes\**" />
+    <None Remove="wwwroot\Images\Themes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\GalleryOld.cshtml" />
+    <Content Remove="Views\Shared\IndexOld.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\PageImages\" />
+  </ItemGroup>
+  
+</Project>
